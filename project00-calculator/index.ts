@@ -1,11 +1,11 @@
 import inquirer from "inquirer";
+import chalk from "chalk";
 
 //importing modules for Operation
 import add from "./add.js";
 import subtraction from "./subtract.js";
 import division from "./divide.js";
 import product from "./product.js";
-import chalk from "chalk";
 
 const main = async () => {
   //using inquirer library here to get Input from user.
@@ -37,4 +37,13 @@ const main = async () => {
   console.log(chalk.bgGreen(input.operator(input.num1, input.num2)));
 };
 
-main();
+//making a loop for multiple time if user want to use it..
+let confirm;
+do {
+  await main();
+  confirm = await inquirer.prompt({
+    type: "confirm",
+    name: "res",
+    message: "Do You Want to Use the Calculator Again?",
+  });
+} while (confirm.res);
