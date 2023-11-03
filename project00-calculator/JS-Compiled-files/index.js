@@ -6,6 +6,8 @@ import subtraction from "./subtract.js";
 import division from "./divide.js";
 import product from "./product.js";
 const main = async () => {
+    //Heading
+    console.log(`${chalk.greenBright("Project-00:")} ${chalk.red("CALCULATOR")}`);
     //using inquirer library here to get Input from user.
     const input = await inquirer.prompt([
         {
