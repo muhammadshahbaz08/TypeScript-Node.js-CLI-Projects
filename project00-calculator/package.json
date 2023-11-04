@@ -1,11 +1,12 @@
 {
-  "name": "project00-calculator",
-  "version": "1.0.0",
+  "name": "project00-calculator-piaic",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./JS-Compiled-files/index.js",
   "type": "module",
+  "bin": "./JS-Compiled-files/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
