@@ -30,7 +30,7 @@ const main = async () => {
     const response = await inquirer.prompt({
       name: "input",
       type: "list",
-      message: "Select a Number from 0 to 5:",
+      message: "Select a Number  0 | 1:",
       choices: ["0", "1"],
     });
 
