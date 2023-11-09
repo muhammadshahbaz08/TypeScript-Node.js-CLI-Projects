@@ -22,3 +22,11 @@
 npm install -g guess-number-game-cli
 
 ```
+<br>
+## ScreenShot
+<h4 align="center">
+        <img src="https://github.com/muhammadshahbaz08/Node-Projects/blob/main/project01_number_guessing-game/images/screenshot-game-cli.jpg" />
+    </a>
+    <br>
+    <br>
+</h4>
