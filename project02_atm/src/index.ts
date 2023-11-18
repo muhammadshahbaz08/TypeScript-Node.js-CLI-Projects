@@ -1,3 +1,7 @@
+import { createUser } from "./functions/createUser.js";
+
 const main = () => {
-  console.log("hello");
+  const users = createUser();
 };
+
+main();
