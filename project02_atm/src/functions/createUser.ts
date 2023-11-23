@@ -1,13 +1,8 @@
 import inquirer from "inquirer";
 import { faker } from "@faker-js/faker";
 
-interface User {
-  id: number;
-  pin: number;
-  name: string;
-  accountNumber: number;
-  balance: number;
-}
+import { User } from "../interface/interface.js";
+
 export const createUser = () => {
   const users: User[] = [];
   //Using Loop For Dynamically Creating Users as many as by controlling the for loop condition.
