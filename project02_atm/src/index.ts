@@ -5,7 +5,7 @@ import inquirer from "inquirer";
 const main = () => {
   const users = createUser();
   /**
-   * To see the , Created User Detail's, e.g Balance      Uncomment following line
+   * To see the , Created User Detail's, e.g Balance Uncomment following line
    */
   // console.log(users);
   const response = processAtmQeury(users);
