@@ -19,7 +19,7 @@ export const atmOperations = async (user: User) => {
     } else if (res.select === "BalanceInquiry") {
       await balanceInquiry(user);
     } else if (res.select === "exit") {
-      console.log(chalk.bgGreen.black.bold("Thanks For Using ATM"));
+      console.log(chalk.bgRed.white.bold("Exiting ATM. Goodbye!"));
       continueTransaction = false;
     }
   }
