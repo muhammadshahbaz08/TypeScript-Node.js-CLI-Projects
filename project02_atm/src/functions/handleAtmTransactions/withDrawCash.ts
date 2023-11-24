@@ -10,9 +10,10 @@ export const WithDrawCash = async (user: User) => {
 
   if (res.amountToWithDraw > user.balance) {
     console.log("Sorry , You Entered Amount Exceeds Your Account Balance !");
-  }
-  if (res.amountToWithDraw < user.balance) {
-    console.log(`WithDrawl Amount : ${res.amountToWithDraw} `);
-    console.log(`Balance : ${user.balance - res.amountToWithDraw}`);
+  } else if (res.amountToWithDraw < user.balance) {
+    console.log(`WithDrawn Amount : ${res.amountToWithDraw} `);
+    console.log(
+      `Balance : ${(user.balance = user.balance - res.amountToWithDraw)}`
+    );
   }
 };
