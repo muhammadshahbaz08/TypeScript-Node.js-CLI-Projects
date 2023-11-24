@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
+import chalk from "chalk";
 import { User } from "../../interface/interface.js";
-
 import { WithDrawCash } from "./withDrawCash.js";
 import { balanceInquiry } from "./balanceInquiry.js";
 
@@ -19,7 +19,7 @@ export const atmOperations = async (user: User) => {
     } else if (res.select === "BalanceInquiry") {
       await balanceInquiry(user);
     } else if (res.select === "exit") {
-      console.log(`Thanks For Using ATM`);
+      console.log(chalk.bgGreen.black.bold("Thanks For Using ATM"));
       continueTransaction = false;
     }
   }

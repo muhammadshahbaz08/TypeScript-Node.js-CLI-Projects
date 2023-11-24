@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
 import { User } from "../../interface/interface.js";
+import chalk from "chalk";
 
 export const WithDrawCash = async (user: User) => {
   const res = await inquirer.prompt({
@@ -9,11 +10,19 @@ export const WithDrawCash = async (user: User) => {
   });
 
   if (res.amountToWithDraw > user.balance) {
-    console.log("Sorry , You Entered Amount Exceeds Your Account Balance !");
-  } else if (res.amountToWithDraw < user.balance) {
-    console.log(`WithDrawn Amount : ${res.amountToWithDraw} `);
     console.log(
-      `Balance : ${(user.balance = user.balance - res.amountToWithDraw)}`
+      chalk.red.bold(
+        "Sorry , You Entered Amount Exceeds Your Account Balance !"
+      )
+    );
+  } else if (res.amountToWithDraw < user.balance) {
+    console.log(
+      chalk.bgBlack.green.bold(`WithDrawn Amount : ${res.amountToWithDraw} `)
+    );
+    console.log(
+      chalk.bgBlack.blue.bold(
+        `Balance : ${(user.balance = user.balance - res.amountToWithDraw)}`
+      )
     );
   }
 };

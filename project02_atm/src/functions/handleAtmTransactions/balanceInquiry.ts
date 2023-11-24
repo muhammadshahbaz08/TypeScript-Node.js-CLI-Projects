@@ -1,6 +1,6 @@
 // import inquirer from "inquirer";
 import { User } from "../../interface/interface.js";
-
+import chalk from "chalk";
 export const balanceInquiry = (user: User) => {
-  console.log(`Available Balance: ${user.balance} `);
+  console.log(chalk.greenBright.bold(`Available Balance: ${user.balance} `));
 };
