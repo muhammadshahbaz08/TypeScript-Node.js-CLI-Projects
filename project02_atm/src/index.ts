@@ -1,6 +1,7 @@
+#! /usr/bin/env node
+
 import { createUser } from "./functions/createUser.js";
 import { processAtmQeury } from "./functions/processAtmQeury.js";
-import inquirer from "inquirer";
 
 const main = () => {
   const users = createUser();
