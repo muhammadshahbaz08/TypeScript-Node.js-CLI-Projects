@@ -14,7 +14,6 @@ export const createUser = () => {
       accountNumber: Number(faker.finance.accountNumber(12)),
       balance: Math.floor(100000 * Math.random() * i),
     };
-
     users.push(user);
   }
 

@@ -10,3 +10,5 @@ const main = () => {
   // console.log(users);
   const response = processAtmQeury(users);
 };
+
+main();

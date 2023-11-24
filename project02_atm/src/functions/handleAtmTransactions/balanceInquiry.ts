@@ -1,4 +1,3 @@
-// import inquirer from "inquirer";
 import { User } from "../../interface/interface.js";
 import chalk from "chalk";
 export const balanceInquiry = (user: User) => {
