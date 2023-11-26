@@ -1,6 +1,6 @@
 {
   "name": "shahbaz-project02-atm",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "./js-compiled-files/index.js",
   "type": "module",
@@ -19,7 +19,6 @@
     "@types/inquirer": "^9.0.7",
     "chalk": "^5.3.0",
     "inquirer": "^9.2.12",
-    "nanospinner": "^1.1.0",
-    "shahbaz-project02-atm": "^1.0.0"
+    "nanospinner": "^1.1.0"
   }
 }
