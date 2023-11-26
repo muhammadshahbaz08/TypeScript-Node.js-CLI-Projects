@@ -17,10 +17,12 @@ export const WithDrawCash = async (user: User) => {
     );
   } else if (res.amountToWithDraw < user.balance) {
     console.log(
-      chalk.bgBlack.green.bold(`WithDrawn Amount : ${res.amountToWithDraw} `)
+      chalk
+        .rgb(255, 148, 140)
+        .bold(`WithDrawn Amount : ${res.amountToWithDraw} `)
     );
     console.log(
-      chalk.bgBlack.blue.bold(
+      chalk.green.bold(
         `Balance : ${(user.balance = user.balance - res.amountToWithDraw)}`
       )
     );

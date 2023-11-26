@@ -9,7 +9,7 @@ export const processAtmQeury = async (users: User[]) => {
   while (attempts) {
     //Intro Line
     console.log(`
-  ${chalk.bgGreen.black.bold("Project 02: ATM CLI \n")} 
+  ${chalk.green.bold("Project 02: ATM CLI \n")} 
   ${chalk.bgMagentaBright.bold(
     "1. Enter a PIN CODE Ranges from 2001 to 2010. \n"
   )}
@@ -30,10 +30,9 @@ export const processAtmQeury = async (users: User[]) => {
     const spinner: Spinner = createSpinner("Authenticating").start();
 
     if (user) {
-      //   spinner.success({ text: chalk.green("Authentication Successfull") });
       setTimeout(() => {
         spinner.success({ text: chalk.green("Authentication Successful") });
-        console.log(chalk.bgYellow.greenBright.bold(`Welcome ${user.name}`));
+        console.log(chalk.rgb(255, 148, 140)(`Welcome ${user.name}`));
         atmOperations(user); //passing the user Data to atm Operation Module.
       }, 1000);
       return;

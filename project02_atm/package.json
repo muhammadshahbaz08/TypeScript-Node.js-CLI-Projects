@@ -1,6 +1,6 @@
 {
   "name": "shahbaz-project02-atm",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "./js-compiled-files/index.js",
   "type": "module",
