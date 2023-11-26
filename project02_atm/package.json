@@ -1,6 +1,6 @@
 {
   "name": "shahbaz-project02-atm",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "./js-compiled-files/index.js",
   "type": "module",
@@ -12,13 +12,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^8.3.1",
     "@types/node": "^20.9.0"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.0.0",
     "@types/inquirer": "^9.0.7",
     "chalk": "^5.3.0",
     "inquirer": "^9.2.12",
-    "nanospinner": "^1.1.0"
+    "nanospinner": "^1.1.0",
+    "shahbaz-project02-atm": "^1.0.0"
   }
 }
