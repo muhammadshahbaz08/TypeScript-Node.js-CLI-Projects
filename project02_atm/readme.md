@@ -10,12 +10,6 @@
 ## Install
 
 ```sh
-# Install globally (recommended).
-npm install -g guess-number-game-cli
-```
-
-```sh
-# For One Time Use.
 npx guess-number-game-cli
 ```
 
