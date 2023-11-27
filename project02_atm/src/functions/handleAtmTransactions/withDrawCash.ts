@@ -15,7 +15,7 @@ export const WithDrawCash = async (user: User) => {
         "Sorry , You Entered Amount Exceeds Your Account Balance !"
       )
     );
-  } else if (res.amountToWithDraw < user.balance) {
+  } else if (res.amountToWithDraw <= user.balance) {
     console.log(
       chalk
         .rgb(255, 148, 140)
