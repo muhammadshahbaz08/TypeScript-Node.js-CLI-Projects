@@ -10,7 +10,11 @@
 ## Install
 
 ```sh
-npx guess-number-game-cli
+# Install globally (recommended).
+npm install -g shahbaz-project02-atm
+
+# Or run directly with npx (installs CLI on every run).
+npx shahbaz-project02-atm
 ```
 
 <br>
