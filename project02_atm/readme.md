@@ -3,7 +3,7 @@
 - This is a CLI Based ATM Machine.
 - User will Add an PIN CODE Ranges From 2001 to 2010.
 - In Case of Entering Invalid PIN CODE 3 times, Program will automatically exit's.
-- This Game is Deployed on NPM as an <a href="https://www.npmjs.com/package/shahbaz-project02-atm">Pacage</a>.
+- This CLI is Deployed on NPM as an <a href="https://www.npmjs.com/package/shahbaz-project02-atm">Pacage</a>.
 
 <br>
 
