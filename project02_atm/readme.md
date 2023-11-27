@@ -24,7 +24,7 @@ npx guess-number-game-cli
 ## Screen Shot
 
 <h4 align="center">
-        <img src="" />
+        <img src="https://github.com/muhammadshahbaz08/Node-Projects/blob/main/project02_atm/images/atm-cli-image.jpg" />
     </a>
     <br>
     <br>
