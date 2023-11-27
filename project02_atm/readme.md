@@ -6,11 +6,6 @@
 - This CLI is Deployed on NPM as an <a href="https://www.npmjs.com/package/shahbaz-project02-atm">Pacage</a>.
 
 <br>
-<br>
-
-[![Watch ATM CLI Demo](./images/atm-cli-image.jpg)](https://www.youtube.com/watch?v=Rzftxf2khxI)
-
-<br>
 
 ## Install
 
