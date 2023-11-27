@@ -8,7 +8,7 @@
 <br>
 <br>
 
-[![Watch ATM CLI Demo]](https://img.youtube.com/vi/Rzftxf2khxI/0.jpg)](https://www.youtube.com/watch?v=Rzftxf2khxI)
+[![Watch ATM CLI Demo]](https://github.com/muhammadshahbaz08/Node-Projects/blob/main/project02_atm/images/atm-cli-image.jpg)](https://www.youtube.com/watch?v=Rzftxf2khxI)
 
 <br>
 
