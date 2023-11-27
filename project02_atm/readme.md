@@ -8,7 +8,7 @@
 <br>
 <br>
 
-[![Watch ATM CLI Demo]](https://github.com/muhammadshahbaz08/Node-Projects/blob/main/project02_atm/images/atm-cli-image.jpg)](https://www.youtube.com/watch?v=Rzftxf2khxI)
+[![Watch ATM CLI Demo](./images/atm-cli-image.jpg)](https://www.youtube.com/watch?v=Rzftxf2khxI)
 
 <br>
 
@@ -27,7 +27,7 @@ npx shahbaz-project02-atm
 ## Screen Shot
 
 <h4 align="center">
-        <img src="https://github.com/muhammadshahbaz08/Node-Projects/blob/main/project02_atm/images/atm-cli-image.jpg" />
+        <img src="./images/atm-cli-image.jpg" />
     </a>
     <br>
     <br>
