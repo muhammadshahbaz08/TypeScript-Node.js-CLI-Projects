@@ -1,3 +1,9 @@
+<h4 align="center">
+    <a href="">
+        <img src="./images/atm-cli-logo.png" alt="atm-cli-logo" />
+    </a>
+    <br>
+    <br>
 # ATM CLI
 
 - This is a CLI Based ATM Machine.
