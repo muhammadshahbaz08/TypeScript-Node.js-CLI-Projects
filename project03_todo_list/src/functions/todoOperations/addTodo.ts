@@ -25,4 +25,5 @@ export const addTodo = async (arr: Todo[]) => {
   ]);
 
   arr.push(res);
+  console.log(`------------------------------------`);
 };
