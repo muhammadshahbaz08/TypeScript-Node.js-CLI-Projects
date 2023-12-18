@@ -7,15 +7,16 @@ import { viewTodo } from "./todoOperations/viewTodo.js";
 
 //Declaring an Array of Object of Type "Todo Interface"..
 let todos: Todo[] = [];
-
 export const cliInterface = async () => {
-  let exit = false;
   //Intro Line
   console.log(
     `\n         ${chalk.bold.bgWhite.hex("#a62133")(
       "Project 03: TODO CLI"
     )}  ${chalk.hex("#c395ed").italic("By Muhammad Shahbaz\n")}`
   );
+
+  //variable for cotrolling Loop
+  let exit = false;
   do {
     //Getting User Response For Operation
     let userSelect = await inquirer.prompt({
@@ -27,11 +28,9 @@ export const cliInterface = async () => {
 
     if (userSelect.operation === "Add TODO") {
       await addTodo(todos);
-      await console.log(`------------------------------------`);
     }
     if (userSelect.operation === "View TODO") {
       await viewTodo(todos);
-      await console.log(`------------------------------------`);
     }
     if (userSelect.operation === "Exit") {
       exit = true;
