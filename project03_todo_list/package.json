@@ -13,6 +13,8 @@
   "dependencies": {
     "@types/inquirer": "^9.0.7",
     "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "dayjs": "^1.11.10",
     "inquirer": "^9.2.12"
   }
 }
