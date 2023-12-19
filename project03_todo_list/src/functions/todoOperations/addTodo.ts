@@ -1,5 +1,7 @@
-import { Todo } from "../../utils/todoType.js";
 import inquirer from "inquirer";
+import dayjs from "dayjs";
+
+import { Todo } from "../../utils/todoType.js";
 
 export const addTodo = async (arr: Todo[]) => {
   const res = await inquirer.prompt([
@@ -12,9 +14,11 @@ export const addTodo = async (arr: Todo[]) => {
       type: "input",
       name: "dueDate",
       message: "Enter the due date (YYYY-MM-DD):",
-      validate: (value) =>
-        !isNaN(Date.parse(value)) || "Please enter a valid date",
-      filter: (value) => new Date(value),
+      validate: (value) => {
+        const isValidate = dayjs(value, "YYYY-MM-DD").isValid();
+        return isValidate || "Please Enter a Valid Date";
+      },
+      filter: (value) => dayjs(value).format("YYYY-MM-DD"),
     },
     {
       type: "list",
