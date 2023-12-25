@@ -4,9 +4,11 @@ import chalk from "chalk";
 import { Todo } from "../utils/todoType.js";
 import { addTodo } from "./todoOperations/addTodo.js";
 import { viewTodo } from "./todoOperations/viewTodo.js";
+import { removeTodo } from "./todoOperations/removeTodo.js";
 
 //Declaring an Array of Object of Type "Todo Interface"..
 let todos: Todo[] = [];
+
 export const cliInterface = async () => {
   //Intro Line
   console.log(
@@ -31,6 +33,9 @@ export const cliInterface = async () => {
     }
     if (userSelect.operation === "View TODO") {
       await viewTodo(todos);
+    }
+    if (userSelect.operation === "Remove TODO") {
+      await removeTodo(todos);
     }
     if (userSelect.operation === "Exit") {
       exit = true;
