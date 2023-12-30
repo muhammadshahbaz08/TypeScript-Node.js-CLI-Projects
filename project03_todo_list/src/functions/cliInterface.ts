@@ -5,6 +5,7 @@ import { Todo } from "../utils/todoType.js";
 import { addTodo } from "./todoOperations/addTodo.js";
 import { viewTodo } from "./todoOperations/viewTodo.js";
 import { removeTodo } from "./todoOperations/removeTodo.js";
+import { editTodo } from "./todoOperations/editTodo.js";
 
 //Declaring an Array of Object of Type "Todo Interface"..
 let todos: Todo[] = [];
@@ -33,6 +34,9 @@ export const cliInterface = async () => {
     }
     if (userSelect.operation === "View TODO") {
       await viewTodo(todos);
+    }
+    if (userSelect.operation === "Edit TODO") {
+      await editTodo(todos);
     }
     if (userSelect.operation === "Remove TODO") {
       await removeTodo(todos);
