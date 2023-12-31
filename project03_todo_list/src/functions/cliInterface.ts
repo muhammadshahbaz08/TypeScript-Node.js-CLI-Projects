@@ -9,7 +9,18 @@ import { editTodo } from "./todoOperations/editTodo.js";
 import { end } from "./todoOperations/end.js";
 
 //Declaring an Array of Object of Type "Todo Interface"..
-let todos: Todo[] = [];
+let todos: Todo[] = [
+  {
+    task: "Buy groceries",
+    dueDate: "2024-01-01",
+    status: "incomplete",
+  },
+  {
+    task: "Finish project",
+    dueDate: "2024-01-15",
+    status: "inprogress",
+  },
+];
 
 export const cliInterface = async () => {
   //Intro Line
