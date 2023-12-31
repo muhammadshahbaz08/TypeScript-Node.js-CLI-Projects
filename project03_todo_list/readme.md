@@ -12,6 +12,18 @@ The application provides the following features:
 - **View Todo**: Display the tasks in your todo list.
 - **Exit**: Quit the application.
 
+## Install
+
+```sh
+  #run directly with npx (installs CLI on every run)
+  npx shahbaz-project03-todo-list
+
+```
+
+## Deployment
+
+This CLI is deployed as <a href="https://www.npmjs.com/package/shahbaz-project03-todo-list">Pacage</a> on Node Pacage Manager
+
 ## Built With
 
 - TypeScript
@@ -26,15 +38,3 @@ The application uses the following libraries:
 - cli-table3 ^0.6.3
 - dayjs ^1.11.10
 - inquirer ^9.2.12
-
-## Install
-
-```sh
-  #run directly with npx (installs CLI on every run)
-  npx shahbaz-project03-todo-list
-
-```
-
-## Deployment
-
-This CLI is deployed as <a href="https://www.npmjs.com/package/shahbaz-project03-todo-list">Pacage</a> on Node Pacage Manager
