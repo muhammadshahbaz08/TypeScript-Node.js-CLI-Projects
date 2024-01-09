@@ -26,7 +26,7 @@ npx shahbaz-project02-atm
 
 <br>
 
-## Screen Shot
+## Preview
 
 <h4 align="center">
         <img src="./images/atm-cli-image.jpg" />
