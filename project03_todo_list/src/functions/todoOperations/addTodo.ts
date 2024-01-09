@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
 import dayjs from "dayjs";
+import chalk from "chalk";
 
 import { Todo } from "../../utils/todoType.js";
 
@@ -29,5 +30,9 @@ export const addTodo = async (arr: Todo[]) => {
   ]);
 
   arr.push(res);
-  console.log(`------------------------------------`);
+  console.log(
+    chalk.green(`
+    ----------------------------------------------------------
+    `)
+  );
 };

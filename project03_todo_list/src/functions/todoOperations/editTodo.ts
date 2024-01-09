@@ -42,5 +42,9 @@ export const editTodo = async (arr: Todo[]) => {
 
     arr[res.selectedTask] = updatedTask;
   }
-  console.log(`--------------------------------`);
+  console.log(
+    chalk.green(`
+    ----------------------------------------------------------
+    `)
+  );
 };

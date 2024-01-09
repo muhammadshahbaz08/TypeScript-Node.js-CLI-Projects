@@ -16,8 +16,15 @@ export const removeTodo = async (arr: Todo[]) => {
       choices: arr.map((item, index) => ({ name: item.task, value: index })),
     });
 
-    console.log(chalk.red.bold(`TASK REMOVED .`));
+    console.log(
+      chalk.red.bold(`       
+             TASK REMOVED `)
+    );
     arr.splice(res.task, 1);
   }
-  console.log(`--------------------------------`);
+  console.log(
+    chalk.hex("#ff78a1")(`
+    ----------------------------------------------------------
+    `)
+  );
 };
