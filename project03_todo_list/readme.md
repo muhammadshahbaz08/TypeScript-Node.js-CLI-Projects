@@ -2,6 +2,14 @@
 
 This is a command-line interface (CLI) based Todo List application built with TypeScript and Node.js.
 
+## Install
+
+```sh
+  #run directly with npx (installs CLI on every run)
+  npx shahbaz-project03-todo-list
+
+```
+
 ## Features
 
 The application provides the following features:
@@ -12,26 +20,22 @@ The application provides the following features:
 - **View Todo**: Display the tasks in your todo list.
 - **Exit**: Quit the application.
 
-## Install
+## Preview
 
-```sh
-  #run directly with npx (installs CLI on every run)
-  npx shahbaz-project03-todo-list
-
-```
+  <h4 align="center">
+      <img src="/src/utils/app-preview.jpg" />
+    </a>
+    <br>
+    <br>
+  </h4>
 
 ## Deployment
 
 This CLI is deployed as <a href="https://www.npmjs.com/package/shahbaz-project03-todo-list">Pacage</a> on Node Pacage Manager
 
-## Built With
-
-- TypeScript
-- Node.js
-
 ## Dependencies
 
-The application uses the following libraries:
+The application uses the following Dependencies:
 
 - @types/inquirer ^9.0.7
 - chalk ^5.3.0
