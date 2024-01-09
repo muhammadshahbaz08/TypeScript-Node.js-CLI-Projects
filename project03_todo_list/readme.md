@@ -23,7 +23,7 @@ The application provides the following features:
 ## Preview
 
   <h4 align="center">
-      <img src="/src/utils/app-preview.jpg" />
+      <img src="./src/utils/app-preview.jpg" />
     </a>
     <br>
     <br>
