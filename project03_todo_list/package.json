@@ -1,6 +1,6 @@
 {
   "name": "shahbaz-project03-todo-list",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "./js-compiled-files/index.js",
   "type": "module",
