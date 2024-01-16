@@ -60,7 +60,6 @@ export const cliInterface = async () => {
 
   // Create a new table with headers
   let table = new Table({
-    // head: ["From", "To", "Amount", "Converted Amount"],
     head: [
       chalk.rgb(252, 165, 165).bold("From"),
       chalk.rgb(252, 165, 165)("To"),
