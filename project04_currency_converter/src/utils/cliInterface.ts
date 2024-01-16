@@ -25,13 +25,13 @@ export const cliInterface = async () => {
   do {
     // spinner1 before Data Fetching ,
     const spinner1 = ora({
-      text: "Hold On , While Fetching Data",
+      text: chalk.hex("#F43F5E")("Hold On , While Fetching Countries Data"),
       spinner: "fistBump",
     }).start();
 
-    await delay(4000);
+    await delay(3000);
 
-    spinner1.succeed(chalk.greenBright("Data Fetched"));
+    spinner1.succeed(chalk.rgb(34, 197, 94)("Data Fetched"));
 
     //fetching Data For Countries...
     let data = await apiService();
@@ -43,7 +43,7 @@ export const cliInterface = async () => {
     let firstCountry = await inquirer.prompt({
       type: "list",
       name: "name",
-      message: "Converting From :",
+      message: `${chalk.hex("#FDE68A")(`Converting From :`)}`,
       choices: countries,
     });
 
@@ -51,7 +51,7 @@ export const cliInterface = async () => {
     let secondCountry = await inquirer.prompt({
       type: "list",
       name: "name",
-      message: "Converting To :",
+      message: `${chalk.hex("#FDE68A")(`Converting To :`)}`,
       choices: countries,
     });
 
@@ -72,7 +72,9 @@ export const cliInterface = async () => {
     let cnvURL = `https://v6.exchangerate-api.com/v6/3c85c0bd193a7a0f863e07fb/pair/${firstCountry.name}/${secondCountry.name}`;
 
     // Start the spinner2, Before Fetching Data For Conversion Data.
-    const spinner2 = ora("Loading Data").start();
+    const spinner2 = ora(
+      chalk.hex("#F0ABFC")("Getting Conversion Rate's")
+    ).start();
 
     //Fetching Data for Conversion
     let cnvData = async (data: any) => {
@@ -81,7 +83,7 @@ export const cliInterface = async () => {
       return res.conversion_rate;
     };
     //Delaying Spinner2
-    await delay(4000);
+    await delay(3000);
 
     spinner2.succeed(chalk.greenBright("Data Loaded"));
 
