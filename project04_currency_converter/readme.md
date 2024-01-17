@@ -1,13 +1,15 @@
 # Currency Converter CLI Application
 
-This project is a command-line interface (CLI) application build using **Node.js & TypeScript.**
-_This CLI allows users to Convert Currencies. It fetches real-time conversion rates from an API and provides an interactive experience for users to select the currencies they want to convert._
+_This Project is a Command-Line interface (CLI) based Application build using **Node.js & TypeScript.**_
 
 ## Install
 
 ```sh
-  #run directly with npx (installs CLI on every run)
+  # Install globally (recommended to avoid installation again & again).
+  npm install -g shahbaz-project04-currency-converter
 
+  #run directly with npx (installs CLI on every run)
+  npx shahbaz-project04-currency-converter
 ```
 
 ## Features
@@ -22,7 +24,7 @@ The application provides the following features:
 ## Preview
 
   <h4 align="center">
-      
+      [![📟](./assets/currency-converter-gif.mp4)](./../../)
     </a>
     <br>
     <br>
@@ -30,7 +32,7 @@ The application provides the following features:
 
 ## Deployment
 
-This CLI is deployed as <a href="">Pacage</a> on Node Pacage Manager
+This CLI is deployed as <a href="https://www.npmjs.com/package/shahbaz-project04-currency-converter">Pacage</a> on Node Pacage Manager
 
 ## Dependencies
 
