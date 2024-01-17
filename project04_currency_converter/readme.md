@@ -1,0 +1,43 @@
+# Currency Converter CLI Application
+
+This project is a command-line interface (CLI) application build using **Node.js & TypeScript.**
+_This CLI allows users to Convert Currencies. It fetches real-time conversion rates from an API and provides an interactive experience for users to select the currencies they want to convert._
+
+## Install
+
+```sh
+  #run directly with npx (installs CLI on every run)
+
+```
+
+## Features
+
+The application provides the following features:
+
+- Fetches real-time currency conversion rates.
+- Provides an interactive CLI for users to select currencies and input the amount to convert.
+- Displays the conversion result in a well-formatted table.
+- Allows users to perform multiple conversions in a single run.
+
+## Preview
+
+  <h4 align="center">
+      
+    </a>
+    <br>
+    <br>
+  </h4>
+
+## Deployment
+
+This CLI is deployed as <a href="">Pacage</a> on Node Pacage Manager
+
+## Dependencies
+
+The application uses the following Dependencies:
+
+- @types/inquirer ^9.0.7
+- chalk ^5.3.0
+- cli-table3 ^0.6.3
+- dayjs ^1.11.10
+- inquirer ^9.2.12
