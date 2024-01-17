@@ -24,8 +24,7 @@ The application provides the following features:
 ## Preview
 
   <h4 align="center"> 
-    [![📟](./assets/curency-converter-gif.gif)](./../../)
-    </a>
+    [![Currency Converter Demo](./assets/curency-converter-gif.gif)]
     <br>
     <br>
   </h4>
