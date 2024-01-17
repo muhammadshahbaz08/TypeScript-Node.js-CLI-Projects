@@ -23,8 +23,8 @@ The application provides the following features:
 
 ## Preview
 
-  <h4 align="center">
-      [![📟](./assets/currency-converter-gif.mp4)](./../../)
+  <h4 align="center"> 
+    [![📟](./assets/curency-converter-gif.gif)](./../../)
     </a>
     <br>
     <br>
