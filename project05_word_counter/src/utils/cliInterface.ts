@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
-import Table from "cli-table3";
 import { end } from "./exit.js";
+import { tableDisplay } from "./table.js";
 
 export const cliInterface = async () => {
   //Intro Line
@@ -35,27 +35,13 @@ export const cliInterface = async () => {
     //Counts Numbers
     const numericCount = (res.text.match(/[0-9]/g) || []).length;
 
-    //Create a Table To Display Count's
-    let table = new Table({
-      head: [
-        chalk.rgb(220, 38, 38)("Sr. #"),
-        chalk.rgb(220, 38, 38)("Description"),
-        chalk.rgb(220, 38, 38)("Count"),
-      ],
-      colWidths: [10, 40, 20],
-      colAligns: ["center", "center", "center"],
-    });
-
-    //Pushing Count data in table
-    table.push(
-      ["1", "Alphabet's Count", alphabeticCount],
-      ["2", "Word's Count", wordCount],
-      ["3", "Special Charachter's Count", specialCharacterCount],
-      ["4", "Numbers Count", numericCount]
+    //Call's Table Module
+    await tableDisplay(
+      alphabeticCount,
+      wordCount,
+      specialCharacterCount,
+      numericCount
     );
-
-    /// Display the table
-    console.log(table.toString());
 
     //Exit or Run the Program Again
     await end(exit);
