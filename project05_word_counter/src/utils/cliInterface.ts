@@ -2,8 +2,8 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 import ora from "ora";
 
-import { end } from "./exit.js";
 import { tableDisplay } from "./table.js";
+import { endCli } from "./endCli.js";
 
 export const cliInterface = async () => {
   //for Multiple Time Usage of CLI
@@ -61,6 +61,6 @@ export const cliInterface = async () => {
     );
 
     //Call End CLI Module
-    await end(exit);
+    exit = await endCli();
   } while (!exit);
 };

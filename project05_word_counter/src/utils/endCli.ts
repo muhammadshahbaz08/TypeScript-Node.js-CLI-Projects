@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
-export const end = async (exit: boolean) => {
+export const endCli = async (): Promise<boolean> => {
   let runCli = await inquirer.prompt({
     type: "confirm",
     name: "run",
@@ -13,12 +13,13 @@ export const end = async (exit: boolean) => {
             Thank's For Using, Exiting the CLI
              `)
     );
-    exit = true;
+    return true;
   } else {
     console.log(
       chalk.hex("#ff78a1")(`
       ----------------------------------------------------------
       `)
     );
+    return false;
   }
 };
