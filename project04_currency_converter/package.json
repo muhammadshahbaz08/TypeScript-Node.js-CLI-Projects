@@ -1,6 +1,6 @@
 {
   "name": "shahbaz-project04-currency-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "./js-compiled-files/index.js",
   "main": "index.js",
   "type": "module",
