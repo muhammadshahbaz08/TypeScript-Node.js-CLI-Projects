@@ -23,7 +23,7 @@ export const tableDisplay = async (
     ["1", "Alphabet's Count", alphabeticCount],
     ["2", "Word's Count", wordCount],
     ["3", "Special Charachter's Count", specialCharacterCount],
-    ["4", "Numbers Count", numericCount]
+    ["4", "Number's Count", numericCount]
   );
 
   /// Display the table

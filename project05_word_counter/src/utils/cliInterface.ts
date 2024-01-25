@@ -52,7 +52,7 @@ export const cliInterface = async () => {
 
     spinner.succeed(chalk.rgb(34, 197, 94)("Data Processed"));
 
-    //Call Table Display Module
+    //Table Display Module
     await tableDisplay(
       alphabeticCount,
       wordCount,
@@ -60,7 +60,7 @@ export const cliInterface = async () => {
       numericCount
     );
 
-    //Call End CLI Module
+    //End CLI Module
     exit = await endCli();
   } while (!exit);
 };
