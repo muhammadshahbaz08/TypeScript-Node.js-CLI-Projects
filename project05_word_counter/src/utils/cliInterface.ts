@@ -1,18 +1,25 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
+import ora from "ora";
+
 import { end } from "./exit.js";
 import { tableDisplay } from "./table.js";
 
 export const cliInterface = async () => {
+  //for Multiple Time Usage of CLI
+  let exit = false;
+
+  // Promise-based delay function for Spinner's
+  const delay = (ms: number) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
+
   //Intro Line
   console.log(
     `\n         ${chalk.bold.bgWhite.hex("#a62133")(
       "Project 05: Word Counter CLI"
     )}  ${chalk.hex("#c395ed").italic("By Muhammad Shahbaz\n")}`
   );
-
-  //for Multiple Time Usage of CLI
-  let exit = false;
 
   do {
     //Getting Input ..
@@ -35,7 +42,17 @@ export const cliInterface = async () => {
     //Counts Numbers
     const numericCount = (res.text.match(/[0-9]/g) || []).length;
 
-    //Call's Table Module
+    //Spinner For Animations
+    const spinner = ora({
+      text: chalk.hex("#F43F5E")("Hold On , Processing Data"),
+      spinner: "fistBump",
+    }).start();
+
+    await delay(3000);
+
+    spinner.succeed(chalk.rgb(34, 197, 94)("Data Processed"));
+
+    //Call Table Display Module
     await tableDisplay(
       alphabeticCount,
       wordCount,
@@ -43,7 +60,7 @@ export const cliInterface = async () => {
       numericCount
     );
 
-    //Exit or Run the Program Again
+    //Call End CLI Module
     await end(exit);
   } while (!exit);
 };
