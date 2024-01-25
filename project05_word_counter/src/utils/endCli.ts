@@ -1,6 +1,9 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 export const endCli = async (): Promise<boolean> => {
+  //for Some Margin
+  console.log(`\n`);
+
   let runCli = await inquirer.prompt({
     type: "confirm",
     name: "run",

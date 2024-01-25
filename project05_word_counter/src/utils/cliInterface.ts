@@ -42,6 +42,9 @@ export const cliInterface = async () => {
     //Counts Numbers
     const numericCount = (res.text.match(/[0-9]/g) || []).length;
 
+    //for Some Margin
+    console.log(`\n`);
+
     //Spinner For Animations
     const spinner = ora({
       text: chalk.hex("#F43F5E")("Hold On , Processing Data"),

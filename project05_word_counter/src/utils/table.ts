@@ -27,5 +27,5 @@ export const tableDisplay = async (
   );
 
   /// Display the table
-  console.log(table.toString());
+  console.log(`\n${table.toString()}`);
 };
