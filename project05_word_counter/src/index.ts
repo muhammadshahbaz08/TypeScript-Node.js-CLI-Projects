@@ -1,5 +1,6 @@
-import { cliInterface } from "./utils/cliInterface.js";
+#! /usr/bin/env node
 
+import { cliInterface } from "./utils/cliInterface.js";
 const main = () => {
   cliInterface();
 };
