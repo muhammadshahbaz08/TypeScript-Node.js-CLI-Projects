@@ -1,6 +1,6 @@
 # Word Counter CLI
 
-_The Word Counter CLI is a command-line tool that allows users to input text and provides various statistics related to the input. It counts alphabetic characters, words, special characters, and numeric characters._
+_The Word Counter CLI (Built Using *TypeScript & Node.js*) is a command-line tool that allows users to input text and provides various statistics related to the input. It counts alphabetic characters, words, special characters, and numeric characters._
 
 ## Install
 
