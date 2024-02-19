@@ -1,6 +1,8 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 import { apiService } from "../services/apiService.js";
+import { resQuizType } from "../services/apiService.js";
+import { quiz } from "./quiz.js";
 
 export const cliInterface = async () => {
   let { name } = await inquirer.prompt({
@@ -18,6 +20,8 @@ export const cliInterface = async () => {
 
   //making difficulty Value to Lower Case Due to API Requirment's..
   //calling apiService
-  let data = await apiService(difficulty.level.toLowerCase());
-  console.log(data);
+  let data: resQuizType = await apiService(difficulty.level.toLowerCase());
+
+  //passing Data to Quiz Module ...
+  await quiz(data);
 };
