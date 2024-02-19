@@ -11,6 +11,13 @@ export const cliInterface = async () => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
+  //Intro Line
+  console.log(
+    `\n         ${chalk.bold.bgWhite.hex("#a62133")(
+      "Project 08: Quiz Cli"
+    )}  ${chalk.hex("#c395ed").italic("By Muhammad Shahbaz\n")}`
+  );
+
   let { name } = await inquirer.prompt({
     type: "input",
     name: "name",
