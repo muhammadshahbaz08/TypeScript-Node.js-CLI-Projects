@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 import { resQuizType } from "../services/apiService.js";
 
-export const quiz = async (data: resQuizType[]) => {
+export const quiz = async (data: resQuizType) => {
   let score: number = 0;
 
   for (let i = 0; i < 5; i++) {
