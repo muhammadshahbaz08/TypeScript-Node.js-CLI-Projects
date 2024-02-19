@@ -2,7 +2,7 @@ import chalk from "chalk";
 import ora from "ora";
 import Table from "cli-table3";
 
-export const result = async (score: number) => {
+export const result = async (score: number, wrongAns: number) => {
   // Promise-based delay function for Spinner's
   const delay = (ms: number) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -16,14 +16,6 @@ export const result = async (score: number) => {
   await delay(3000);
 
   spinner.succeed(chalk.rgb(34, 197, 94)("Result Compiled"));
-
-  //for wrongAns, Track
-  let wrongAns;
-  if (score > 0) {
-    wrongAns = 5 - score;
-  } else {
-    wrongAns = 0;
-  }
 
   //table..for Result's
   let table = new Table({
@@ -41,5 +33,5 @@ export const result = async (score: number) => {
   table.push(["1", 5, score, wrongAns]);
 
   /// Display the table
-  console.log(`\n${table.toString()}`);
+  console.log(`\n${table.toString()}\n`);
 };

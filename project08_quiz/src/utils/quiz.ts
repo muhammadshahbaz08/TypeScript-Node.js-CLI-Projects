@@ -5,7 +5,7 @@ import { result } from "./result.js";
 
 export const quiz = async (data: resQuizType) => {
   let score: number = 0;
-
+  let wrongAns: number = 0;
   for (let i = 0; i < 5; i++) {
     /**
      * we are making answer's array b/c in API response, we are getting correct answer Seprate &
@@ -32,6 +32,7 @@ export const quiz = async (data: resQuizType) => {
       ++score;
       console.log(`\n\tYour Answer is ${chalk.bold.green(`CORRECT`)}.`);
     } else {
+      ++wrongAns;
       console.log(`\n\tYour Answer is ${chalk.bold.redBright(`WRONG`)}.`);
       console.log(
         `\tCorrect Answer is ${chalk.green.bold(data[i].correct_answer)}\n`
@@ -39,5 +40,5 @@ export const quiz = async (data: resQuizType) => {
     }
   } //loop end's
 
-  result(score);
+  result(score, wrongAns);
 };
