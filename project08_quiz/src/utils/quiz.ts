@@ -31,7 +31,7 @@ export const quiz = async (
 
     if (quizQuery === data[i].correct_answer) {
       ++score;
-      console.log(`\n\tYour Answer is ${chalk.bold.green(`CORRECT`)}.`);
+      console.log(`\n\tYour Answer is ${chalk.bold.green(`CORRECT\n`)}`);
     } else {
       ++wrongAns;
       console.log(`\n\tYour Answer is ${chalk.bold.redBright(`WRONG`)}.`);

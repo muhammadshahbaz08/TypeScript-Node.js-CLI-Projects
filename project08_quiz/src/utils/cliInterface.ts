@@ -33,7 +33,7 @@ export const cliInterface = async () => {
     let difficulty = await inquirer.prompt({
       type: "list",
       name: "level",
-      message: "Choose  Difficult Level",
+      message: "Choose  Difficult Level :",
       choices: ["Easy", "Medium", "Hard"],
     });
 
