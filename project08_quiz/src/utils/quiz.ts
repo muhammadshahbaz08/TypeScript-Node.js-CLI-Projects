@@ -1,9 +1,10 @@
 import inquirer from "inquirer";
 import { resQuizType } from "../services/apiService.js";
 import chalk from "chalk";
-import { result } from "./result.js";
 
-export const quiz = async (data: resQuizType) => {
+export const quiz = async (
+  data: resQuizType
+): Promise<{ score: number; wrongAns: number }> => {
   let score: number = 0;
   let wrongAns: number = 0;
   for (let i = 0; i < 5; i++) {
@@ -40,5 +41,5 @@ export const quiz = async (data: resQuizType) => {
     }
   } //loop end's
 
-  result(score, wrongAns);
+  return { score, wrongAns };
 };
