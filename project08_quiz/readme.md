@@ -54,4 +54,3 @@ The application uses the following Dependencies:
 - inquirer ^9.2.12
 - ora ^8.0.1
 - cli-table3 ^0.6.3
--
