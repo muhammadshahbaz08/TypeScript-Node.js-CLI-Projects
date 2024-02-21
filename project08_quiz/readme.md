@@ -26,7 +26,7 @@ The Adventure Game CLI offers the following features:
 ## Preview
 
   <h4 align="center"> 
-    <img src="./assets/app-preview.jpg" />
+    <img src="./assets/app-preiview.jpg" />
     <br>
     <br>
   </h4>
@@ -43,3 +43,15 @@ This CLI is deployed as <a href="https://www.npmjs.com/package/shahbaz-project08
 - Inquirer (for user input)
 - Chalk (for colorful console output)
 - Ora (for loading spinner)
+- Cli-table3 (For Displaying Table)
+
+## Dependencies
+
+The application uses the following Dependencies:
+
+- @types/inquirer ^9.0.7
+- chalk ^5.3.0
+- inquirer ^9.2.12
+- ora ^8.0.1
+- cli-table3 ^0.6.3
+-
