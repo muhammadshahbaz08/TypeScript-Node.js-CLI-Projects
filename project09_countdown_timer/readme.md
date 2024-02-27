@@ -23,8 +23,9 @@ The Adventure Game CLI offers the following features:
 ## Preview
 
   <h4 align="center"> 
-    <img src="./assets/app-preiview-1.jpg" />
-    <img src="./assets/app-preiview-2.jpg" />
+    <img src="./assets/app-preview-1.jpg"/>
+    <br>
+    <img src="./assets/app-preview-2.jpg" />
     <br>
     <br>
   </h4>
