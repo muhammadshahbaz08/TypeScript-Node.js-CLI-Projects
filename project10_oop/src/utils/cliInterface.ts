@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
+import { endCli } from "./endCli.js";
 
 import { Student } from "../classes/student.js";
 
@@ -11,25 +12,32 @@ export const cliInterface = async () => {
     )}  ${chalk.hex("#c395ed").italic("By Muhammad Shahbaz\n")}`
   );
 
-  const { name }: { name: string } = await inquirer.prompt({
-    name: "name",
-    message: `Enter Your Name: `,
-  });
+  //for multiple time CLI usage
+  let exit = false;
 
-  const { num }: { num: number } = await inquirer.prompt({
-    type: "number",
-    name: "num",
-    message: `Type 1 if you like to talk to others and 2 if you would rather keep it to yourself: `,
-  });
-  //Object
-  const stu = new Student();
-  stu.askQuestion(num);
-  stu.Name = name;
+  do {
+    const { name }: { name: string } = await inquirer.prompt({
+      name: "name",
+      message: `Enter Your Name: `,
+    });
 
-  console.log(
-    `\n\t${chalk.cyan(`**********SUMMARY***********`)}
+    const { num }: { num: number } = await inquirer.prompt({
+      type: "number",
+      name: "num",
+      message: `Type 1 if you like to talk to others and 2 if you would rather keep it to yourself: `,
+    });
+    //Object
+    const stu = new Student();
+    stu.askQuestion(num);
+    stu.Name = name;
+
+    console.log(
+      `\n\t${chalk.cyan(`**********SUMMARY***********`)}
      \n\tYour Name is ${chalk.bold.green(
        name
      )}.\n\tYour Personality is ${chalk.italic.yellow(stu.getPersonlaity())}.\n`
-  );
+    );
+
+    exit = await endCli();
+  } while (!exit);
 }; //cliInterface module end's
