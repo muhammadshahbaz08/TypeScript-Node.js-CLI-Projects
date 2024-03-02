@@ -1,5 +1,6 @@
+import { cliInterface } from "./utils/cliInterface.js";
 const index = () => {
-  console.log("Hello");
+  cliInterface();
 };
 
 index();
