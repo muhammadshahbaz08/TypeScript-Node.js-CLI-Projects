@@ -15,7 +15,7 @@ export class Person {
     }
   };
 
-  GetPersonlaity = (): string => {
+  getPersonlaity = (): string => {
     return this.personality;
   };
 }
