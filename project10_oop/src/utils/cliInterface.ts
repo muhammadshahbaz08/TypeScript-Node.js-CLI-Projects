@@ -13,7 +13,7 @@ export const cliInterface = async () => {
   );
 
   //for multiple time CLI usage
-  let exit = false;
+  let exit: boolean = false;
 
   do {
     const { name }: { name: string } = await inquirer.prompt({
