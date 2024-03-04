@@ -6,15 +6,15 @@ _This Project is an Interactive Command-Line Interface (CLI) application that is
 
 ```sh
   # Install globally (recommended to avoid installation again & again).
-  npm i
+  npm i shahbaz-project10_oop
 
   #run directly with npx (installs CLI on every run)
-  npx
+  npx shahbaz-project10_oop
 ```
 
 ## OOP Concepts
 
-This project effectively demonstrates several OOP principles such as **encapsulation, abstraction, and instantiation**. It encapsulates the behavior of a student within the Student class, abstracting away the details of how it operates. Additionally, it instantiates objects from this class to represent individual students, allowing for modular and reusable code
+This project effectively demonstrates several OOP principles such as **encapsulation, abstraction, and instantiation(Objects)**. It encapsulates the behavior of a student within the Student class, abstracting away the details of how it operates. Additionally, it instantiates objects from this class to represent individual students, allowing for modular and reusable code
 
 ## Features
 
@@ -24,7 +24,7 @@ This CLI offers the following features:
   indicating their preference for interaction.
 - **Object Creation:** Utilizes the Student class to create a student
   object and interact with it.
-- **Summary** Display: Presents a summary of the interaction including the
+- **Summary:** Display: Presents a summary of the interaction including the
   entered name and the personality based on the interaction preference.
 
 ## Preview
@@ -37,7 +37,7 @@ This CLI offers the following features:
 
 ## Deployment
 
-This CLI is deployed as <a href="https://www.npmjs.com/package">Pacage</a> on Node Pacage Manager
+This CLI is deployed as <a href="https://www.npmjs.com/package/shahbaz-project10_oop">Pacage</a> on Node Pacage Manager
 
 ## Technologies Used
 
