@@ -1,11 +1,12 @@
 {
-  "name": "project10_oop",
+  "name": "shahbaz-project10_oop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./js-compiled-files/index.js",
   "type": "module",
+  "bin": "./js-compiled-files/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
