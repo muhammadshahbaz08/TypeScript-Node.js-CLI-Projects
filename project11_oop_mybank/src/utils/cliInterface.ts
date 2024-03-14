@@ -19,7 +19,11 @@ let customers: Customer[] = [
   },
 ];
 export const cliInterface = async () => {
-  console.log(`Welcome to Bank`);
+  console.log(
+    `\n         ${chalk.bold.bgWhite.hex("#a62133")(
+      "Project 11: My Bank CLI"
+    )}  ${chalk.hex("#c395ed").italic("By Muhammad Shahbaz\n")}`
+  );
   let exit = false;
   while (!exit) {
     const { res } = await inquirer.prompt({
