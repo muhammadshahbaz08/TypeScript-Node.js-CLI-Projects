@@ -44,7 +44,7 @@ export const newAccount = async () => {
     {
       type: "number",
       name: "pin",
-      message: "Create a PIN CODE :",
+      message: "Create a 4-Digit PIN CODE :",
       validate: (input) => {
         if (input >= 1000 && input <= 9999) {
           return true;
@@ -63,7 +63,12 @@ export const newAccount = async () => {
     spinner: "dots12",
   }).start();
   await delay(3000);
-  spinner.succeed(chalk.hex("#10B981").bold("User Created Successfully..\n"));
-
+  //spinner ended
+  spinner.succeed(chalk.hex("#10B981").bold("User Created Successfully.."));
+  console.log(
+    chalk.hex("#4ADE80")(`
+    ************************************************
+    `)
+  );
   return res;
 };
