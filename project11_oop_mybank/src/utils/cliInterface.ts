@@ -45,9 +45,6 @@ export const cliInterface = async () => {
       let newUser: Customer = await newAccount();
       //Adding New User Data to Customer array...
       customers.push(newUser);
-
-      ////End CLI Module
-      exit = await endCli();
     } else if (res === "Exit") {
       ////End CLI Module
       exit = await endCli();
