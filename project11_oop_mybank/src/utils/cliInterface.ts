@@ -18,6 +18,11 @@ let customers: Customer[] = [
     account: new Account(),
   },
 ];
+// Promise-based delay function for Spinner's
+export const delay = (ms: number) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
 export const cliInterface = async () => {
   console.log(
     `\n         ${chalk.bold.bgWhite.hex("#a62133")(
