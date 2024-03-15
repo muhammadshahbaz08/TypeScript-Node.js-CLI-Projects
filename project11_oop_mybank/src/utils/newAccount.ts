@@ -1,4 +1,9 @@
 import inquirer from "inquirer";
+import ora from "ora";
+import chalk from "chalk";
+
+//delay module for spinner's animation
+import { delay } from "./cliInterface.js";
 import { Account } from "../classes/account.js";
 export const newAccount = async () => {
   const res = await inquirer.prompt([
@@ -52,9 +57,13 @@ export const newAccount = async () => {
   // assigning account details ,via making an object of account class
   res.account = new Account();
 
-  console.log(`\n\t---------------------------------------\n`);
-  //spinner's will come
-  // User Created...
-  //now push the data to array...
+  // Spinner For Animations
+  const spinner = ora({
+    text: chalk.hex("#F43F5E")("Please, Wait While User is Creating..."),
+    spinner: "dots12",
+  }).start();
+  await delay(3000);
+  spinner.succeed(chalk.hex("#10B981").bold("User Created Successfully..\n"));
+
   return res;
 };
