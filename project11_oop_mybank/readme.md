@@ -1,4 +1,4 @@
-# QUIZ CLI
+# My Bank CLI
 
 _This is a Command-line Based Bank Application,It provides a simple yet powerful command-line interface for managing bank accounts, allowing users to perform actions such as creating new accounts, logging in, making debit/credit transactions, and checking their account balance.._
 
